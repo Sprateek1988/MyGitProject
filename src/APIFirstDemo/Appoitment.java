@@ -37,7 +37,7 @@ public class Appoitment {
 		
 		String CancelStr = given().log().all().queryParam("MarketingAPIKey", "409d6302-1d6b-4bcf-83b8-af4a250b07e9").queryParam("CompanyCode", "c00000085736")
 		.queryParam("PropertyId", "409082").queryParam("VoyProspectId",ProspectId).queryParam("VoyApptId",ProspectApptId).when().post("marketingapi/api/appointments/cancelappointment")
-		.then().assertThat().statusCode(200).extract().response().asString();
+		.then().log().all().assertThat().statusCode(200).extract().response().asString();
 	
 		JsonPath js1 = new JsonPath(CancelStr);
 			
