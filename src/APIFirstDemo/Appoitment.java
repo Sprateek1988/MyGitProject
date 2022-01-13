@@ -7,9 +7,9 @@ import static io.restassured.RestAssured.*;
 
 public class Appoitment {
 
-	public static String FName="YPA4";
-	public static String LName="YPA4";
-	public static String Email="YPA4@gmail.com";
+	public static String FName="YPA5";
+	public static String LName="YPA5";
+	public static String Email="YPA5@gmail.com";
 	public static String AppDate="01/19/2022";
 	public static String AppTime="12:30AM";
 	public static String DesiredMoveInDate="04/20/2022";
